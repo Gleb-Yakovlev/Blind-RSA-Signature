@@ -7,6 +7,8 @@
 Далее сообщение принимается отправителем и демаскируется, после программа получает 
 исходное сообщение с помощью открытого ключа и может сравнить его с отправленным, 
 если они совпадают, то подписанное сообщение корректно.
+Так же были разработаны функции для перевода текста в числовой формат (в файле bits.py),
+и функции проверки числа на простоту с помощью алгоритма Миллера-Рабина (primeNumb.py).
 Eng(auto)
 He developed a blind signature system using the RSA algorithm. The program simulates the blind signature
 of the message "m". First, the encryption keys are created public "OpenKey" and
@@ -17,3 +19,5 @@ to the signing party, which uses the private key to sign the message.
 Next, the message is received by the sender and unmasked, after which the program receives 
 the original message is using the public key and can compare it with the sent one,
 if they match, then the signed message is correct.
+Functions have also been developed to translate text into numeric format (in a file bits.py ),
+and the functions of checking the number for simplicity using the Miller-Rabin algorithm (primeNumb.py )
