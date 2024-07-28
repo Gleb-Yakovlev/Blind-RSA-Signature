@@ -163,67 +163,9 @@ print("r = ", r)
 print("shfr arr = ", shifrArr)
 sigMessage = creating_a_signature(shifrArr, closeKey)
 print("sig m = ", sigMessage)
-start = time.time()
 demM = demasking_message(sigMessage, r, openKey[1])
-end = time.time()
-print("Dem m = ", demM)
-print("Decryption speed = ", 0.00423350841979728, "s")
 gettedMessage = get_message(demM, openKey)
 print("gettedMessage = ", bits.int_to_text(gettedMessage))
 
 
-# print("p = ", p)
-# print("q = ", q)
-# eler = (p-1)*(q-1)
-# print("eler = ", eler)
-# e = findE(eler)
-# print("e = ", e)
-# d = findD(eler, e)
-# print("d = ", d)
 
-
-def RSA(openKey, closeKey):
-
-    print("Text = ", m)
-
-    print("text to int = ", m)
-
-    start = time.time()
-
-    end = time.time()
-    # print("shifrArr = ", shifrArr)
-    print("Encryption time = ", end-start, "s")
-
-    start = time.time()
-
-    end = time.time()
-    # print("deShifrArr = ", deShifrArr)
-    print("Decryption time = ", end-start, "s")
-
-    # print("int to text = ", mText)
-
-# print("p = ", p)
-#     print("q = ", q)
-#     print("eler = ", eler)
-#     print("e = ", e)
-#     print("d = ", d)
-#     print("Open Key = {", e, ";", n, "}")
-#     print("Close Key = {", d, ";", n, "}")
-
-# bit = bits.text_to_bit(m)
-# print("text to bit = ", bit)
-
-# text = bits.bit_to_text(bit)
-# print("bit tot text = ", text)
-
-    # deShifrArr.append((item**d)%n)
-
-# arr = []
-# for i in range(0, len(str(m)), lenN):
-#     arr.append(int(str(m)[:lenN]))
-#     if len(str(m)) >= lenN:
-#         m = int(str(m)[lenN:])
-#     print(m)
-# print(arr)
-
-# input("Press Enter to continue...")
